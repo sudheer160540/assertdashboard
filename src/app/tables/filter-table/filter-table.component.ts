@@ -12,7 +12,7 @@ import {MatTableDataSource} from '@angular/material';
 })
 export class FilterTableComponent implements OnInit {
 
-	displayedColumns = ['AssetName', 'DeviceImage', 'AssetTag', 'Serial','Model','Category','Status','CheckedOutTo','Location','PurchaseCost'];
+	displayedColumns = ['Name', 'Title', 'Email', 'Phone','Username','Department','Location','Manager','Notes','Status'];
 	dataSource = new MatTableDataSource(ELEMENT_DATA);
   	constructor() { }
 
@@ -23,30 +23,28 @@ export class FilterTableComponent implements OnInit {
 
 }
 export interface Element {
-	AssetName: string;
-	DeviceImage: string;
-	AssetTag: string;
-	Serial: string;
-	Model:string;
-	Category:string;
-	Status:string;
-	CheckedOutTo:string;
+	Name: string;
+	Title: string;
+	Email: string;
+	Phone: string;
+	Username:string;
+	Department:string;
 	Location:string;
-	PurchaseCost:string
+	Manager:string;
+	Notes:string;
+	Status:string
 	
   }
   
   const ELEMENT_DATA: Element[] = [
-	{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
-{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
-  
-{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
-{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
-{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
-{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
-{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
-{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
-{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
-{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
+	{Name: 'Ramu', Title: 'Production Laborer', Email: 'kutch.herta@gmail.com', Phone: '+919349999334',Username:"Ramu",Department:'Laborer',Location:'Hyderabad',Manager:'admin',Notes:'Created by DB seeder',Status:'Active'},
+	{Name: 'Raju', Title: 'Office Clerk', Email: 'raju@gmail.com', Phone: '+919494160540',Username:"raju",Department:'Clerk',Location:'Hyderabad',Manager:'admin',Notes:'Created by DB seeder',Status:'In Active'},
+	{Name: 'Rafi', Title: 'Production', Email: 'rafi@gmail.com', Phone: '+919349999334',Username:"rafi",Department:'Human Resources',Location:'Hyderabad',Manager:'admin',Notes:'Created by DB seeder',Status:'Active'},
+	{Name: 'Kumar', Title: 'Meat Packer', Email: 'kumar@gmail.com', Phone: '+919349999334',Username:"kumar",Department:'Client Services',Location:'Hyderabad',Manager:'admin',Notes:'Created by DB seeder',Status:'Active'},
+	{Name: 'Naresh', Title: 'Computer Programmer', Email: 'naresh@gmail.com', Phone: '+919966481421',Username:"naresh",Department:'Programmer',Location:'Hyderabad',Manager:'admin',Notes:'Created by DB seeder',Status:'In Active'},
+	{Name: 'Rajesh', Title: 'File Clerk', Email: 'rajesh@gmail.com', Phone: '+919349999334',Username:"rajesh",Department:'Marketing',Location:'Hyderabad',Manager:'admin',Notes:'Created by DB seeder',Status:'Active'},
+	{Name: 'Srikanth', Title: 'Rail Yard Engineer', Email: 'srikant@gmail.com', Phone: '+919492879947',Username:"srikanth",Department:'Engineer',Location:'Hyderabad',Manager:'admin',Notes:'Created by DB seeder',Status:'Active'},
+	{Name: 'Sai', Title: 'Sales Person', Email: 'sai@gmail.com', Phone: '+919966479727',Username:"sai",Department:'Sales',Location:'Hyderabad',Manager:'admin',Notes:'Created by DB seeder',Status:'Active'},
+	{Name: 'Sai Kumar', Title: 'Production Laborer', Email: 'saikumar@gmail.com', Phone: '_919349999334',Username:"saikumar",Department:'Dept of Silly Walks	',Location:'Hyderabad',Manager:'admin',Notes:'Created by DB seeder',Status:'In Active'},
 
 ];
