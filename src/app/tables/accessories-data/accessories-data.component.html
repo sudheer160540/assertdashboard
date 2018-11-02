@@ -1,3 +1,64 @@
-<p>
-  accessories-data works!
-</p>
+
+<div fxLayout="column"  class="components-container-gt-xs"  [ngClass.xs]="'components-container-xs'"  fxLayoutGap="20px">
+
+	<div fxFlex class="table-component-holder mat-elevation-z4">
+		<mat-toolbar class="table-header">
+			<h1 class="mat-headline center-align" >Accessories
+			</h1>
+		</mat-toolbar>
+		
+		<div class="table-container">
+			<mat-table #table [dataSource]="dataSource">
+
+				<!--- Note that these columns can be defined in any order.
+				The actual rendered columns are set as a property on the row definition" -->
+
+		
+
+				<!-- Progress Column -->
+				<ng-container matColumnDef="Name">
+					<mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+					<mat-cell *matCellDef="let element"> {{element.Name}} </mat-cell>
+				</ng-container>
+
+				<!-- Name Column -->
+				<ng-container matColumnDef="AccessoryCategory">
+					<mat-header-cell *matHeaderCellDef> Accessory Category </mat-header-cell>
+					<mat-cell *matCellDef="let element"> {{element.AccessoryCategory}} </mat-cell>
+				</ng-container>
+
+				<!-- Color Column -->
+				<ng-container matColumnDef="ModelNo">
+					<mat-header-cell *matHeaderCellDef> Model No. </mat-header-cell>
+					<mat-cell *matCellDef="let element"> {{element.ModelNo}} </mat-cell>
+				</ng-container>
+				<ng-container matColumnDef="Manufacturer">
+					<mat-header-cell *matHeaderCellDef> Manufacturer </mat-header-cell>
+					<mat-cell *matCellDef="let element"> {{element.Manufacturer}} </mat-cell>
+				</ng-container>
+				<ng-container matColumnDef="Location">
+					<mat-header-cell *matHeaderCellDef> Location </mat-header-cell>
+					<mat-cell *matCellDef="let element"> {{element.Location}} </mat-cell>
+				</ng-container>
+				<ng-container matColumnDef="Total">
+					<mat-header-cell *matHeaderCellDef> Total </mat-header-cell>
+					<mat-cell *matCellDef="let element"> {{element.Total}} </mat-cell>
+				</ng-container>
+				<ng-container matColumnDef="MinQTY">
+					<mat-header-cell *matHeaderCellDef> MinQTY </mat-header-cell>
+					<mat-cell *matCellDef="let element"> {{element.MinQTY}} </mat-cell>
+        </ng-container>
+        
+        <ng-container matColumnDef="Avail">
+					<mat-header-cell *matHeaderCellDef> Avail </mat-header-cell>
+					<mat-cell *matCellDef="let element"> {{element.Avail}} </mat-cell>
+				</ng-container>
+				
+			
+				<mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+				<mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+				
+			</mat-table>
+		</div>
+	</div>
+</div>
