@@ -4,19 +4,19 @@
         </div>
     </div>
     <div fxLayout="row" fxLayout="row wrap" class="table_space">
-        Recent Activites
+        <b> Recent Activites </b>
         <app-data-tables></app-data-tables>
     </div>
     <div fxLayout="row" fxLayout="row wrap" class="graphTable">
         <div class="pie_chart">
-            <b>Asset by Status</b>
+            <p>Asset by Status</p>
             <cdk-doughnut-graph fxFlex="37.5" fxFlex.lt-sm="100" fxFlex.sm="50"></cdk-doughnut-graph>
            
         </div>
         
     
         <div class="bottom_table">
-            <b>Asset Categories</b>
+            <p>Asset Categories</p>
             <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
     
                 <!--- Note that these columns can be defined in any order.

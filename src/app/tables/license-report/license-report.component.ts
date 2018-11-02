@@ -38,9 +38,9 @@ export interface Element {
       RemainingSeats: '10',
       ExpirationDate:'2021-04-17',
       PurchaseDate:'2018-02-12',
-      PurchaseCost:'299.99',
-      Value:'299.99',
-      Diff:'0'
+      PurchaseCost:'299.99USD',
+      Value:'299.99USD',
+      Diff:'0USD'
           
       },
       {
@@ -50,9 +50,9 @@ export interface Element {
         RemainingSeats: '7',
         ExpirationDate:'2021-03-14',
         PurchaseDate:'2019-04-02',
-        PurchaseCost:'99.99',
-        Value:'99.99',
-        Diff:'0'
+        PurchaseCost:'199.99USD',
+        Value:'99.99USD',
+        Diff:'100USD'
             
         },
         {
@@ -62,9 +62,9 @@ export interface Element {
           RemainingSeats: '5',
           ExpirationDate:'2021-02-25',
           PurchaseDate:'2018-02-12',
-          PurchaseCost:'199.99',
-          Value:'199.99',
-          Diff:'0'
+          PurchaseCost:'199.99USD',
+          Value:'150.99USD',
+          Diff:'49USD'
               
           }, {
             License: 'Office',
@@ -73,9 +73,9 @@ export interface Element {
             RemainingSeats: '3',
             ExpirationDate:'2021-06-25',
             PurchaseDate:'2018-04-25',
-            PurchaseCost:'49.99',
-            Value:'49.99',
-            Diff:'0'
+            PurchaseCost:'149.99USD',
+            Value:'109.99USD',
+            Diff:'40USD'
                 
             }
 ];

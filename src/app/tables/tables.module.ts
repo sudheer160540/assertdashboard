@@ -41,6 +41,7 @@ import { LicensesDataComponent } from './licenses-data/licenses-data.component';
 import { AccessoriesDataComponent } from './accessories-data/accessories-data.component';
 import { ConsumablesDataComponent } from './consumables-data/consumables-data.component';
 import { ComponentDataComponent } from './component-data/component-data.component';
+import { LimitToPipe } from './limit';
 
 
 export function highlightJsFactory(): any {
@@ -90,7 +91,8 @@ export function highlightJsFactory(): any {
    LicensesDataComponent,
    AccessoriesDataComponent,
    ConsumablesDataComponent,
-   ComponentDataComponent],
+   ComponentDataComponent,
+   LimitToPipe],
 
   exports: [
     ]
