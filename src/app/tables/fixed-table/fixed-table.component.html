@@ -5,7 +5,7 @@
 		<mat-toolbar class="table-header">
 			<h1 class="mat-headline center-align" >Fixed Table</h1>
 		</mat-toolbar>
-		<a >ssssssssssssssss</a>
+		
 		<div class="table-container">
 			<mat-table #table [dataSource]="dataSource">
 
@@ -13,29 +13,55 @@
 				The actual rendered columns are set as a property on the row definition" -->
 
 				<!-- ID Column -->
-				<ng-container matColumnDef="userId">
-					<mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
-					<mat-cell *matCellDef="let row"  [routerLink]="['/auth/tables/assertDetails']"> {{row.id}} </mat-cell>
+				<ng-container matColumnDef="AssetName">
+					<mat-header-cell *matHeaderCellDef> Asset Name </mat-header-cell>
+					<mat-cell *matCellDef="let element"  [routerLink]="['/auth/tables/assertDetails']"> {{element.AssetName}} </mat-cell>
 				</ng-container>
 
 				<!-- Progress Column -->
-				<ng-container matColumnDef="progress">
-					<mat-header-cell *matHeaderCellDef> Progress </mat-header-cell>
-					<mat-cell *matCellDef="let row"> {{row.progress}}% </mat-cell>
+				<ng-container matColumnDef="DeviceImage">
+					<mat-header-cell *matHeaderCellDef> Device Image </mat-header-cell>
+					<mat-cell *matCellDef="let element"> {{element.DeviceImage}}% </mat-cell>
 				</ng-container>
 
 				<!-- Name Column -->
-				<ng-container matColumnDef="userName">
-					<mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
-					<mat-cell *matCellDef="let row"> {{row.name}} </mat-cell>
+				<ng-container matColumnDef="AssetTag">
+					<mat-header-cell *matHeaderCellDef> Asset Tag </mat-header-cell>
+					<mat-cell *matCellDef="let element"> {{element.AssetTag}} </mat-cell>
 				</ng-container>
 
 				<!-- Color Column -->
-				<ng-container matColumnDef="color">
-					<mat-header-cell *matHeaderCellDef> Color </mat-header-cell>
-					<mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.color}} </mat-cell>
+				<ng-container matColumnDef="Serial">
+					<mat-header-cell *matHeaderCellDef> Serial </mat-header-cell>
+					<mat-cell *matCellDef="let element"> {{element.Serial}} </mat-cell>
+				</ng-container>
+				<ng-container matColumnDef="Model">
+					<mat-header-cell *matHeaderCellDef> Model </mat-header-cell>
+					<mat-cell *matCellDef="let element"> {{element.Model}} </mat-cell>
+				</ng-container>
+				<ng-container matColumnDef="Category">
+					<mat-header-cell *matHeaderCellDef> Category </mat-header-cell>
+					<mat-cell *matCellDef="let element"> {{element.Category}} </mat-cell>
+				</ng-container>
+				<ng-container matColumnDef="Status">
+					<mat-header-cell *matHeaderCellDef> Status </mat-header-cell>
+					<mat-cell *matCellDef="let element"> {{element.Status}} </mat-cell>
+				</ng-container>
+				<ng-container matColumnDef="CheckedOutTo">
+					<mat-header-cell *matHeaderCellDef> CheckedOutTo </mat-header-cell>
+					<mat-cell *matCellDef="let element"> {{element.CheckedOutTo}} </mat-cell>
+				</ng-container>
+				<ng-container matColumnDef="Location">
+					<mat-header-cell *matHeaderCellDef> Location </mat-header-cell>
+					<mat-cell *matCellDef="let element"> {{element.Location}} </mat-cell>
 				</ng-container>
 
+				<ng-container matColumnDef="PurchaseCost">
+					<mat-header-cell *matHeaderCellDef> PurchaseCost </mat-header-cell>
+					<mat-cell *matCellDef="let element"> {{element.PurchaseCost}} </mat-cell>
+				</ng-container>
+			
+			
 				<mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
 				<mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
 				

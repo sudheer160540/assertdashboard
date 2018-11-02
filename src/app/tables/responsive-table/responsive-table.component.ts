@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation, Input,Output,EventEmitter, ViewChild } from '@angular/core';
 import { ResponsiveTableHelpers } from './helpers.data';
 import { MatPaginator } from '@angular/material';
-
+import {MatTableDataSource} from '@angular/material';
 @Component({
   selector: 'cdk-responsive-table',
   templateUrl: './responsive-table.component.html',
@@ -9,40 +9,42 @@ import { MatPaginator } from '@angular/material';
 })
 export class ResponsiveTableComponent implements OnInit {
 
-  	displayedColumns = ['userId', 'userName', 'progress', 'color'];
-	rows: Array<any> = [];
-    showResponsiveTableCode;
+    displayedColumns = ['AssetName', 'DeviceImage', 'AssetTag', 'Serial','Model','Category','Status','CheckedOutTo','Location','PurchaseCost'];
+	dataSource = new MatTableDataSource(ELEMENT_DATA);
+  	constructor() { }
 
-	@ViewChild(MatPaginator) paginator1: MatPaginator;
-    pageLength = 0;
-    pageSize = 15;
-    helpers = ResponsiveTableHelpers;
-    @Input() status;
-    @Input() actionStatus;
-    @Output() edit = new EventEmitter();
-    @Output() delete = new EventEmitter();
-    @Output() view = new EventEmitter();
-    @Output() page = new EventEmitter();
-    @Output() sort = new EventEmitter();
-    @Output() dup = new EventEmitter();
-  	constructor() {
-   	}
-
-    ngOnInit() {
-        this.getRows();
-    }
-  	next(event) {
-        this.rows = [];
-    	for (var i= 1 * event.pageIndex * event.pageSize; i< event.pageSize+event.pageIndex*event.pageSize ;i++) {
-            this.rows = [...this.rows,this.helpers.rows[i]];
-        }
-    }
-    getRows() {
-        for (var i=0;i<this.pageSize;i++) {
-            this.rows = [...this.rows,this.helpers.rows[i]];
-        }
-        this.pageLength = this.helpers.rows.length;
-    }
-    sortData(val){
+  	ngOnInit() {
+		//   this.dataSource = new ExampleDataSource(this.exampleDatabase);
+		//   console.log(JSON.stringify(this.dataSource))
     }
 }
+
+
+export interface Element {
+	AssetName: string;
+	DeviceImage: string;
+	AssetTag: string;
+	Serial: string;
+	Model:string;
+	Category:string;
+	Status:string;
+	CheckedOutTo:string;
+	Location:string;
+	PurchaseCost:string
+	
+  }
+  
+  const ELEMENT_DATA: Element[] = [
+	{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
+{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
+  
+{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
+{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
+{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
+{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
+{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
+{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
+{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
+{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
+
+];
