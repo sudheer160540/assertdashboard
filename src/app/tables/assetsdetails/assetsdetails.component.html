@@ -1,3 +1,35 @@
-<p>
-  assetsdetails works!
-</p>
+
+
+<div class="assert_css">
+    <mat-tab-group>
+        <mat-tab label="Details"> 
+          <div>
+              <img src="https://demo.snipeitapp.com/uploads/models/mbp.jpg" alt="">
+            <!-- <li>  hello</li> -->
+          </div>
+          <div>
+          <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> Name </th>
+              <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+            <ng-container matColumnDef="symbol">
+              <th mat-header-cell *matHeaderCellDef> Symbol </th>
+              <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+        </div>
+           </mat-tab>
+        <mat-tab label="License"> No Data  </mat-tab>
+        <mat-tab label="Components"> No Data  </mat-tab>
+        <mat-tab label="Assets"> 
+        No Data                
+        </mat-tab>
+        <mat-tab label="Maintenaces">No Data </mat-tab>
+        <mat-tab label="History">No Data </mat-tab>
+        <mat-tab label="Files">No Data </mat-tab>
+      </mat-tab-group>
+
+</div>

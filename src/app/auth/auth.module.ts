@@ -12,6 +12,10 @@ import { MatTabsModule } from '@angular/material';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+import {TableModule} from 'primeng/table';
+import {MatTableModule} from '@angular/material/table';
+
+import {MatGridListModule } from '@angular/material';
 
 import { appRoutes } from './lazyloader.routes';
 
@@ -36,6 +40,9 @@ import { CoreModule } from '../core/core.module';
         CoreModule,
         MatSidenavModule,
         PerfectScrollbarModule,
+        TableModule,
+        MatTableModule,
+        MatGridListModule
     ],
     declarations: [AuthComponent],
     providers: [
