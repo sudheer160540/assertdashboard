@@ -2,3 +2,62 @@ mat-card {
   padding: 5px;
   margin: 5px;
 }
+.graphs_b{
+  background-color: #fff;
+  display: block;
+  height: 300px;
+  overflow: auto
+}
+.bottom_table{
+  display: block;
+  height: 300px;
+  overflow: auto;
+  background-color: #fff;
+}
+.bottom_table table{
+  width: 780px;
+}
+.pie_chart{
+  display: block;
+  height: 300px;
+  width: 500px;
+  overflow: auto;
+  background-color: #fff;
+
+}
+.graphTable{
+  margin-top: 10px;
+}
+.graphTable{
+  font-size: 21px;
+   margin-left: 10px;
+}
+.bottom_table i{
+  text-align: center;
+}
+// .table_space{
+//   margin: 10pxl
+// }
+.bottom_table .mat-header-cell{
+  font-size: 20px;
+  font-weight: bold;
+}
+.table_space {
+   padding: 10px;
+}
+.table_space b{
+  font-family: Source Sans Pro,sans-serif;
+  margin-bottom: 10px;
+  font-size: 16px;
+  
+
+}
+.bottom_table h3{
+  font-family: Source Sans Pro,sans-serif;
+}
+.table_h th {
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: bold;
+  font-size: 14px;
+  background: #cccccc38;
+}

@@ -34,6 +34,14 @@ import { FeatureTableComponent } from './feature-table/feature-table.component';
 import { ResponsiveTableComponent } from './responsive-table/responsive-table.component';
 import { FixedTableComponent } from './fixed-table/fixed-table.component';
 import { AssetsdetailsComponent } from './assetsdetails/assetsdetails.component';
+import { LicenseReportComponent } from './license-report/license-report.component';
+import { AccessoryReportComponent } from './accessory-report/accessory-report.component';
+import { DepreciationReportComponent } from './depreciation-report/depreciation-report.component';
+import { LicensesDataComponent } from './licenses-data/licenses-data.component';
+import { AccessoriesDataComponent } from './accessories-data/accessories-data.component';
+import { ConsumablesDataComponent } from './consumables-data/consumables-data.component';
+import { ComponentDataComponent } from './component-data/component-data.component';
+import { LimitToPipe } from './limit';
 
 
 export function highlightJsFactory(): any {
@@ -76,7 +84,15 @@ export function highlightJsFactory(): any {
    FeatureTableComponent,
    ResponsiveTableComponent,
    FixedTableComponent,
-   AssetsdetailsComponent],
+   AssetsdetailsComponent,
+   LicenseReportComponent,
+   AccessoryReportComponent,
+   DepreciationReportComponent,
+   LicensesDataComponent,
+   AccessoriesDataComponent,
+   ConsumablesDataComponent,
+   ComponentDataComponent,
+   LimitToPipe],
 
   exports: [
     ]
