@@ -33,6 +33,7 @@ import { FilterTableComponent } from './filter-table/filter-table.component';
 import { FeatureTableComponent } from './feature-table/feature-table.component';
 import { ResponsiveTableComponent } from './responsive-table/responsive-table.component';
 import { FixedTableComponent } from './fixed-table/fixed-table.component';
+import { AssetsdetailsComponent } from './assetsdetails/assetsdetails.component';
 
 
 export function highlightJsFactory(): any {
@@ -74,7 +75,8 @@ export function highlightJsFactory(): any {
    FilterTableComponent,
    FeatureTableComponent,
    ResponsiveTableComponent,
-   FixedTableComponent],
+   FixedTableComponent,
+   AssetsdetailsComponent],
 
   exports: [
     ]

@@ -9,10 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class DashboardCrmComponent implements OnInit {
 
     public dashCard = [
-        { colorDark: '#5C6BC0', colorLight: '#7986CB', number: 1375, title: 'TOTAL ASSETS', icon: 'local_grocery_store' },
-        { colorDark: '#42A5F5', colorLight: '#64B5F6', number: 50, title: 'TOTAL LICENSES', icon: 'new_releases' },
-        { colorDark: '#26A69A', colorLight: '#4DB6AC', number: 4, title: 'TOTAL ACCESSORIES', icon: 'assignments' },
-        { colorDark: '#66BB6A', colorLight: '#81C784', number: 2, title: 'TOTAL CONSUMABLES', icon: 'account_balance' }
+        { colorDark: '#5C6BC0', colorLight: '#7986CB', number: 1375, title: 'TOTAL ASSETS', icon: 'local_grocery_store',link: '/auth/tables/fixed' },
+        { colorDark: '#42A5F5', colorLight: '#64B5F6', number: 50, title: 'TOTAL LICENSES', icon: 'new_releases',link: '/auth/tables/featured' },
+        { colorDark: '#26A69A', colorLight: '#4DB6AC', number: 4, title: 'TOTAL ACCESSORIES', icon: 'assignments',link: '/auth/tables/responsive' },
+        { colorDark: '#66BB6A', colorLight: '#81C784', number: 2, title: 'TOTAL CONSUMABLES', icon: 'account_balance',link: '/auth/tables/fixed' }
     ];
 
     tableData = [

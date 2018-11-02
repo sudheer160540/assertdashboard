@@ -26,6 +26,7 @@ import { D3UsaComponent } from './d3-usa/d3-usa.component';
 import { WorldMapComponent } from './world-map/world-map.component';
 
 
+import { RouterModule } from '@angular/router';
 @NgModule({
   imports: [
     CommonModule,
@@ -41,7 +42,8 @@ import { WorldMapComponent } from './world-map/world-map.component';
     MatChipsModule,
     MatProgressBarModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule
   ],
   declarations: [
       DashcardComponent, 

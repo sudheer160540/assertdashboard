@@ -16,20 +16,20 @@ export const menus = [
         ]
     },
     {
-        'name': 'Material Widget',
+        'name': 'Assets',
         'icon': 'widgets',
         'link': false,
         'open': false,
         'sub': [
             {
-                'name': 'Buttons',
+                'name': 'All Deployed',
                 'link': 'material-widgets/buttons',
                 'icon': 'indeterminate_check_box',
                 'chip': false,
                 'open': false,
             },
             {
-                'name': 'List',
+                'name': 'All Redy to Deploy',
                 'link': 'material-widgets/list',
                 'icon': 'list',
                 'chip': false,
@@ -37,7 +37,7 @@ export const menus = [
             },
             {
 
-                'name': 'Stepper',
+                'name': 'All Pending',
                 'link': 'material-widgets/stepper',
                 'icon': 'view_week',
                 'chip': false,
@@ -165,26 +165,26 @@ export const menus = [
     //                 ]
     // },
     {
-        'name': 'Tables',
+        'name': 'Assets',
         'icon': 'list',
         'link': false,
         'open': false,
         'chip': { 'value': 2, 'color': 'accent' },
         'sub': [
             {
-                'name': 'Fixed',
+                'name': 'All Deployed',
                 'icon': 'filter_list',
                 'link': 'tables/fixed',
                 'open': false,
             },
             {
-                'name': 'Feature',
+                'name': 'All Redy to Deploy',
                 'icon': 'done_all',
                 'link': 'tables/featured',
                 'open': false,
             },
             {
-                'name': 'Responsive Tables',
+                'name': 'All Pending',
                 'icon': 'filter_center_focus',
                 'link': 'tables/responsive',
                 'open': false,
@@ -193,16 +193,28 @@ export const menus = [
 
     },
     {
-        'name': 'Guarded Routes',
+        'name': 'Licenses',
         'icon': 'mode_edit',
         'link': '/auth/guarded-routes',
         'open': false,
     }, {
-        'name': 'Scrumboard',
+        'name': 'Accessories',
         'open': false,
         'link': '/auth/scrumboard',
         'icon': 'grade',
-    }, {
+    },
+    {
+        'name': 'Consumables',
+        'open': false,
+        'link': '/auth/charts/chartjs',
+        'icon': 'show_chart',
+    },{
+        'name': 'Component',
+        'open': false,
+        'link': '/auth/charts/ngx-charts',
+        'icon': 'work',
+    },
+     {
         'name': 'Applications',
         'icon': 'view_module',
         'open': false,

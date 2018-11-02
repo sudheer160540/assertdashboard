@@ -5,6 +5,7 @@
 		<mat-toolbar class="table-header">
 			<h1 class="mat-headline center-align" >Fixed Table</h1>
 		</mat-toolbar>
+		<a >ssssssssssssssss</a>
 		<div class="table-container">
 			<mat-table #table [dataSource]="dataSource">
 
@@ -14,7 +15,7 @@
 				<!-- ID Column -->
 				<ng-container matColumnDef="userId">
 					<mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
-					<mat-cell *matCellDef="let row"> {{row.id}} </mat-cell>
+					<mat-cell *matCellDef="let row"  [routerLink]="['/auth/tables/assertDetails']"> {{row.id}} </mat-cell>
 				</ng-container>
 
 				<!-- Progress Column -->
