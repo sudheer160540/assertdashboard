@@ -9,17 +9,17 @@ export interface PeriodicElement {
   }
   
   const ELEMENT_DATA: PeriodicElement[] = [
-    {position: 'Thu Nov 01, 2018 11:52PM', name: 'Admin User', weight: 'checkout', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
-    {position: 'Thu Nov 01, 2018 11:52PM', name: 'Admin User', weight: 'Update', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
-    {position: 'Thu Nov 01, 2018 11:52PM', name: 'Admin User', weight: 'checkout', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
-    {position: 'Thu Nov 01, 2018 11:52PM', name: 'Admin User', weight: 'checkout', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
-    {position: 'Thu Nov 01, 2018 11:52PM', name: 'Create New', weight: 'checkout', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
-    {position: 'Thu Nov 01, 2018 10:57PM', name: 'Admin User', weight: 'Requested', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
-    {position: 'Thu Nov 01, 2018 11:52PM', name: 'Admin User', weight: 'checkout', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
-    {position: 'Thu Nov 01, 2018 11:52PM', name: 'Admin User', weight: 'Update', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
-    {position: 'Thu Nov 01, 2018 9:08PM	', name: 'Admin User', weight: 'Requested', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
-    {position: 'Thu Nov 01, 2018 12:52PM', name: 'Admin User', weight: 'checkout', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
-    {position: 'Thu Nov 01, 2018 9:08PM', name: 'Admin User', weight: 'Requested', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
+    {position: 'Laptops', name: 'Assets', weight: '1174', symbol: '0',target:'0',floppy:0},
+    {position: 'Desktops', name: 'Assets',weight: '94', symbol: '0',target:'4',floppy:0},
+    {position: 'Mobile Phones',name: 'Assets', weight: '60', symbol: '0',target:'4',floppy:0},
+    {position: 'Displays',name: 'Assets', weight: '10', symbol: '0',target:'4',floppy:0},
+    {position: 'Tablets', name: 'accessory', weight: '50', symbol: '0',target:'4',floppy:0},
+    {position: 'Voip Phones',  name: 'accessory',  weight: '98', symbol: '0',target:'4',floppy:0},
+    {position: 'Conference Phones',  name: 'accessory',  weight: '76', symbol: '0',target:'2',floppy:0},
+    {position: 'Keyboard',  name: 'accessory', weight: '0', symbol: '0',target:'1',floppy:0},
+    {position: 'Mouse', name: 'consumable', weight: '0', symbol: '0',target:'0',floppy:0},
+    {position: 'Printers',  name: 'consumable',  weight: '0', symbol: '1',target:'1',floppy:0},
+    {position: 'RAM', name: 'component',  weight: '0', symbol: '0',target:'3',floppy:0},
   ];
 
 @Component({
