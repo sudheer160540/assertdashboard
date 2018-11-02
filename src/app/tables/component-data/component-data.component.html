@@ -18,13 +18,13 @@
 				<!-- Progress Column -->
 				<ng-container matColumnDef="Name">
 					<mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
-					<mat-cell *matCellDef="let element"> {{element.Name}} </mat-cell>
+					<mat-cell *matCellDef="let element" matTooltip="{{element.Name}}" aria-label="Button that displays a tooltip when focused or hovered over"> {{element.Name | limitTo:[10]}} </mat-cell>
 				</ng-container>
 
 				<!-- Name Column -->
 				<ng-container matColumnDef="Serial">
 					<mat-header-cell *matHeaderCellDef> Serial </mat-header-cell>
-					<mat-cell *matCellDef="let element"> {{element.Serial}} </mat-cell>
+					<mat-cell *matCellDef="let element" matTooltip="{{element.Serial}}" aria-label="Button that displays a tooltip when focused or hovered over"> {{element.Serial | limitTo:[10]}} </mat-cell>
 				</ng-container>
 
 				<!-- Color Column -->
