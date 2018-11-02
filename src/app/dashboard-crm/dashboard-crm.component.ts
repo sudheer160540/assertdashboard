@@ -1,4 +1,26 @@
 import { Component, OnInit } from '@angular/core';
+export interface PeriodicElement {
+    name: string;
+    position: String;
+    weight: string;
+    symbol: string;
+    target:string;
+    floppy:number
+  }
+  
+  const ELEMENT_DATA: PeriodicElement[] = [
+    {position: 'Thu Nov 01, 2018 11:52PM', name: 'Admin User', weight: 'checkout', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
+    {position: 'Thu Nov 01, 2018 11:52PM', name: 'Admin User', weight: 'Update', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
+    {position: 'Thu Nov 01, 2018 11:52PM', name: 'Admin User', weight: 'checkout', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
+    {position: 'Thu Nov 01, 2018 11:52PM', name: 'Admin User', weight: 'checkout', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
+    {position: 'Thu Nov 01, 2018 11:52PM', name: 'Create New', weight: 'checkout', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
+    {position: 'Thu Nov 01, 2018 10:57PM', name: 'Admin User', weight: 'Requested', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
+    {position: 'Thu Nov 01, 2018 11:52PM', name: 'Admin User', weight: 'checkout', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
+    {position: 'Thu Nov 01, 2018 11:52PM', name: 'Admin User', weight: 'Update', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
+    {position: 'Thu Nov 01, 2018 9:08PM	', name: 'Admin User', weight: 'Requested', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
+    {position: 'Thu Nov 01, 2018 12:52PM', name: 'Admin User', weight: 'checkout', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
+    {position: 'Thu Nov 01, 2018 9:08PM', name: 'Admin User', weight: 'Requested', symbol: 'Acrobat',target:'Macbook Pro 13" (1400284932)',floppy:0},
+  ];
 
 @Component({
     selector: 'app-dashboard-crm',
@@ -7,6 +29,8 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class DashboardCrmComponent implements OnInit {
+    displayedColumns: string[] = ['position', 'name', 'weight', 'symbol','target','floppy'];
+    dataSource = ELEMENT_DATA
 
     public dashCard = [
         { colorDark: '#5C6BC0', colorLight: '#7986CB', number: 1375, title: 'TOTAL ASSETS', icon: 'local_grocery_store',link: '/auth/tables/fixed' },

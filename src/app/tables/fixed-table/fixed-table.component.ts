@@ -1,26 +1,18 @@
-import { Component, OnInit , ElementRef, ViewChild} from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { ExampleDatabase, ExampleDataSource } from './helpers.data';
 import { Observable } from 'rxjs';
-import {MatTableDataSource} from '@angular/material';
+import { MatTableDataSource } from '@angular/material';
 @Component({
-  selector: 'app-fixed-table',
-  templateUrl: './fixed-table.component.html',
-  styleUrls: ['./fixed-table.component.scss']
+	selector: 'app-fixed-table',
+	templateUrl: './fixed-table.component.html',
+	styleUrls: ['./fixed-table.component.scss']
 })
 export class FixedTableComponent implements OnInit {
-	// public displayedColumns = ['userId', 'userName', 'progress', 'color','model'];
-	// public exampleDatabase = new ExampleDatabase();
-	// public dataSource: ExampleDataSource | null;
-	//   public showFilterTableCode;
-	//   public assertData;
-	displayedColumns = ['AssetName', 'DeviceImage', 'AssetTag', 'Serial','Model','Category','Status','CheckedOutTo','Location','PurchaseCost'];
+	displayedColumns = ['AssetName', 'DeviceImage', 'AssetTag', 'Serial', 'Model', 'Category', 'Status', 'CheckedOutTo', 'Location', 'PurchaseCost'];
 	dataSource = new MatTableDataSource(ELEMENT_DATA);
-  	constructor() { }
-
-  	ngOnInit() {
-		//   this.dataSource = new ExampleDataSource(this.exampleDatabase);
-		//   console.log(JSON.stringify(this.dataSource))
-    }
+	constructor() { }
+	ngOnInit() {
+	}
 
 }
 export interface Element {
@@ -28,26 +20,24 @@ export interface Element {
 	DeviceImage: string;
 	AssetTag: string;
 	Serial: string;
-	Model:string;
-	Category:string;
-	Status:string;
-	CheckedOutTo:string;
-	Location:string;
-	PurchaseCost:string
-	
-  }
-  
-  const ELEMENT_DATA: Element[] = [
-	{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
-{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
-  
-{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
-{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
-{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
-{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
-{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
-{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
-{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
-{AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14',Model:"Macbook Pro 13",Category:'Laptops',Status:'Ready to Deploy',CheckedOutTo:'Xzavier Simonis',Location:'Hyderabad',PurchaseCost:'35000'},
+	Model: string;
+	Category: string;
+	Status: string;
+	CheckedOutTo: string;
+	Location: string;
+	PurchaseCost: string
+}
+const ELEMENT_DATA: Element[] = [
+	{ AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14', Model: "Macbook Pro 13", Category: 'Laptops', Status: 'Ready to Deploy', CheckedOutTo: 'Xzavier Simonis', Location: 'Hyderabad', PurchaseCost: '35000' },
+	{ AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14', Model: "Macbook Pro 13", Category: 'Laptops', Status: 'Ready to Deploy', CheckedOutTo: 'Xzavier Simonis', Location: 'Hyderabad', PurchaseCost: '35000' },
+
+	{ AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14', Model: "Macbook Pro 13", Category: 'Laptops', Status: 'Ready to Deploy', CheckedOutTo: 'Xzavier Simonis', Location: 'Hyderabad', PurchaseCost: '35000' },
+	{ AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14', Model: "Macbook Pro 13", Category: 'Laptops', Status: 'Ready to Deploy', CheckedOutTo: 'Xzavier Simonis', Location: 'Hyderabad', PurchaseCost: '35000' },
+	{ AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14', Model: "Macbook Pro 13", Category: 'Laptops', Status: 'Ready to Deploy', CheckedOutTo: 'Xzavier Simonis', Location: 'Hyderabad', PurchaseCost: '35000' },
+	{ AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14', Model: "Macbook Pro 13", Category: 'Laptops', Status: 'Ready to Deploy', CheckedOutTo: 'Xzavier Simonis', Location: 'Hyderabad', PurchaseCost: '35000' },
+	{ AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14', Model: "Macbook Pro 13", Category: 'Laptops', Status: 'Ready to Deploy', CheckedOutTo: 'Xzavier Simonis', Location: 'Hyderabad', PurchaseCost: '35000' },
+	{ AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14', Model: "Macbook Pro 13", Category: 'Laptops', Status: 'Ready to Deploy', CheckedOutTo: 'Xzavier Simonis', Location: 'Hyderabad', PurchaseCost: '35000' },
+	{ AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14', Model: "Macbook Pro 13", Category: 'Laptops', Status: 'Ready to Deploy', CheckedOutTo: 'Xzavier Simonis', Location: 'Hyderabad', PurchaseCost: '35000' },
+	{ AssetName: 'L1', DeviceImage: 'https://demo.snipeitapp.com/uploads/models/mbp.jpg', AssetTag: '1069298670', Serial: '1a8d-3294-ade1-76e85fab5e14', Model: "Macbook Pro 13", Category: 'Laptops', Status: 'Ready to Deploy', CheckedOutTo: 'Xzavier Simonis', Location: 'Hyderabad', PurchaseCost: '35000' },
 
 ];

@@ -2,3 +2,36 @@ mat-card {
   padding: 5px;
   margin: 5px;
 }
+.graphs_b{
+  background-color: #fff;
+  display: block;
+  height: 300px;
+  overflow: auto
+}
+.bottom_table{
+  display: block;
+  height: 300px;
+  overflow: auto;
+  background-color: #fff;
+}
+.bottom_table table{
+  width: 780px;
+}
+.pie_chart{
+  display: block;
+  height: 300px;
+  width: 500px;
+  overflow: auto;
+  background-color: #fff;
+
+}
+.graphTable{
+  margin-top: 10px;
+}
+.graphTable{
+  font-size: 21px;
+   margin-left: 10px;
+}
+// .table_space{
+//   margin: 10pxl
+// }
