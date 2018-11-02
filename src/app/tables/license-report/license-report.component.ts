@@ -33,11 +33,11 @@ export interface Element {
   const ELEMENT_DATA: Element[] = [
     {
       License: 'Photoshop',
-      ProductKey: 'f13c9bb0-99a0-30a9-b8ae-616d2ed5830c',
+      ProductKey: 'f13-990-30-b8a-583',
       Seats: '10',
       RemainingSeats: '10',
-      ExpirationDate:'2021-03-25 00:00:00',
-      PurchaseDate:'2018-02-12 00:00:00',
+      ExpirationDate:'2021-04-17',
+      PurchaseDate:'2018-02-12',
       PurchaseCost:'299.99',
       Value:'299.99',
       Diff:'0'
@@ -45,11 +45,11 @@ export interface Element {
       },
       {
         License: 'Acrobat',
-        ProductKey: 'ccfc28bb-00ed-3746-84d9-58a95e8acb19',
+        ProductKey: '28bb-00ed-374-84d9-5b9',
         Seats: '10',
         RemainingSeats: '7',
-        ExpirationDate:'2021-03-25 00:00:00',
-        PurchaseDate:'2018-02-12 00:00:00',
+        ExpirationDate:'2021-03-14',
+        PurchaseDate:'2019-04-02',
         PurchaseCost:'99.99',
         Value:'99.99',
         Diff:'0'
@@ -57,22 +57,22 @@ export interface Element {
         },
         {
           License: 'InDesign',
-          ProductKey: '79286f4e-ab38-32a2-8425-51b354e4a4de',
+          ProductKey: '792-ab8-322-845-513',
           Seats: '10',
           RemainingSeats: '5',
-          ExpirationDate:'2021-03-25 00:00:00',
-          PurchaseDate:'2018-02-12 00:00:00',
+          ExpirationDate:'2021-02-25',
+          PurchaseDate:'2018-02-12',
           PurchaseCost:'199.99',
           Value:'199.99',
           Diff:'0'
               
           }, {
             License: 'Office',
-            ProductKey: '58cce855-0ca0-3452-a1da-5902f171e581',
+            ProductKey: '58c-0ca0-352-a1da-5581',
             Seats: '20',
             RemainingSeats: '3',
-            ExpirationDate:'2021-03-25 00:00:00',
-            PurchaseDate:'2018-02-12 00:00:00',
+            ExpirationDate:'2021-06-25',
+            PurchaseDate:'2018-04-25',
             PurchaseCost:'49.99',
             Value:'49.99',
             Diff:'0'
