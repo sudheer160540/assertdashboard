@@ -15,7 +15,7 @@ right: 18px;
 background: #fff;
 }
 .table-header {
-	background-color: #327ebd;
+	background-color:#78909b;
 	color: white;
 	padding: 0 5px;
 }
@@ -23,6 +23,12 @@ background: #fff;
 	padding: 5px 15px 15px 15px;
 }
 .table-component-holder {
-	border: 1px solid #327ebd;
+	border: 1px solid #78909b;
 	background-color: white;
+}
+.mat-header-cell {
+    color: rgba(0, 0, 0, 0.54);
+    font-weight: bold;
+    font-size: 14px;
+    background: #cccccc38;
 }

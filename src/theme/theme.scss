@@ -10,7 +10,7 @@
 $mat-light-theme-background: (
   status-bar: map_get($mat-grey, 300),
   app-bar:    map_get($mat-grey, 100),
-  background: map_get($mat-indigo, 50),
+  background: map_get($mat-blue-grey, 50),
   hover:      rgba(black, 0.04), // TODO(kara): check style with Material Design UX
   card:       white,
   dialog:     white,
@@ -26,7 +26,7 @@ $mat-light-theme-background: (
 
 @include mat-core();
 
-$primary : $mat-indigo;
+$primary : $mat-blue-grey;
 $accent  : $mat-orange;
 $warn    : $mat-red;
 
